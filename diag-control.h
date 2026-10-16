@@ -102,6 +102,7 @@
     PCAP_DO_PRAGMA(clang diagnostic ignored "-Wshorten-64-to-32") \
     PCAP_DO_PRAGMA(clang diagnostic ignored "-Wmissing-noreturn") \
     PCAP_DO_PRAGMA(clang diagnostic ignored "-Wunused-parameter") \
+    PCAP_DO_PRAGMA(clang diagnostic ignored "-Wunused-function") \
     PCAP_DO_PRAGMA(clang diagnostic ignored "-Wunreachable-code")
   #define DIAG_ON_FLEX \
     PCAP_DO_PRAGMA(clang diagnostic pop)
@@ -187,6 +188,7 @@
     __pragma(warning(disable:4127)) \
     __pragma(warning(disable:4242)) \
     __pragma(warning(disable:4244)) \
+    __pragma(warning(disable:4505)) \
     __pragma(warning(disable:4702))
   #define DIAG_ON_FLEX \
     __pragma(warning(pop))
@@ -219,6 +221,7 @@
     PCAP_DO_PRAGMA(GCC diagnostic push) \
     PCAP_DO_PRAGMA(GCC diagnostic ignored "-Wsign-compare") \
     PCAP_DO_PRAGMA(GCC diagnostic ignored "-Wunused-parameter") \
+    PCAP_DO_PRAGMA(GCC diagnostic ignored "-Wunused-function") \
     PCAP_DO_PRAGMA(GCC diagnostic ignored "-Wunreachable-code")
   #define DIAG_ON_FLEX \
     PCAP_DO_PRAGMA(GCC diagnostic pop)
